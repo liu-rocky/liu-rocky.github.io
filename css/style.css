@@ -49,7 +49,7 @@ section > h2, .section-heading { margin-bottom: 32px; }
 .about { display: grid; grid-template-columns: minmax(0, 1fr) 150px; column-gap: 68px; row-gap: 20px; align-items: start; }
 .identity { grid-column: 1; grid-row: 1; }
 .affiliation { margin-top: 9px; color: var(--muted); font-size: 1rem; }
-.portrait { grid-column: 2; grid-row: 1 / span 2; width: 150px; margin-top: 6px; border-radius: 2px; }
+.portrait { grid-column: 2; grid-row: 1 / span 2; width: 150px; margin-top: 36px; border-radius: 2px; }
 .biography { grid-column: 1; grid-row: 2; max-width: 690px; }
 .research-intro { margin: 0; font-size: 1.08rem; line-height: 1.7; }
 .research-intro strong { color: var(--ink); }
