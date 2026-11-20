@@ -87,7 +87,7 @@ section > h2, .section-heading { margin-bottom: 32px; }
 .paper-details[open] { flex-basis: 100%; }
 .paper-details[open] > p { margin-top: 10px; font-size: 1rem; }
 
-.project { display: grid; grid-template-columns: 228px minmax(0, 1fr); column-gap: 34px; align-items: start; margin-bottom: 40px; }
+.project { display: grid; grid-template-columns: 228px minmax(0, 1fr); column-gap: 34px; align-items: center; margin-bottom: 40px; }
 .project:last-child { margin-bottom: 0; }
 .project > div { min-width: 0; }
 .project-image { display: flex; align-items: center; justify-content: center; min-height: 140px; cursor: zoom-in; }

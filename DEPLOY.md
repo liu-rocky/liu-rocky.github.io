@@ -24,10 +24,10 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 ## 外部资源与上线检查
 
-Delta 配图已使用你提供的本地图片。以下三张既有图片仍使用外链，需要访问对应站点；本次环境无法下载它们的原始文件：
+页面配图和学校、公司 logo 均使用项目内的本地文件，不再依赖外部图片地址。AnySkill、VeM 的图片已从原始来源下载，弹窗使用原尺寸的无损 WebP，列表使用较小的缩略图：
 
-- VeM 配图：`https://arxiv.org/html/2511.09585v4/figures/1_task_illustration.png`
-- AnySkill 配图：`https://raw.githubusercontent.com/jiemingcui/anyskill/main/assets/teaser.png`
-- Delta 公司 logo：`https://deltai.com/media/brand/delta-icon.png`
+- VeM 配图：`images/papers/vem.webp`；缩略图：`images/thumbs/vem.webp`。
+- AnySkill 配图：`images/papers/anyskill.webp`；缩略图：`images/thumbs/anyskill.webp`。
+- Delta 公司 logo：`images/logos/delta.png`。
 
-YouTube 演示和外部论文、项目页面也需要联网。已完成本地资源引用、图片解码、动画时长及脚本语法检查；当前环境无法启动浏览器或 HTTP 预览服务，因此上线后请打开主页，确认上述外链图片、YouTube 演示及图片弹窗正常显示。
+部署时请同步这些图片文件以及 `index.html`。YouTube 演示和外部论文、项目页面仍需要联网。
