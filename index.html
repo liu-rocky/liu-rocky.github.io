@@ -1,5 +1,346 @@
 <!doctype html>
-<html>
-<head><meta charset="utf-8"><title>helloworld</title></head>
-<body>helloworld</body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nian (Rocky) Liu, Ph.D. student at BUPT and BIGAI. Research on robot perception and control, physics-based character animation, VLA models, and sim-to-real transfer.">
+  <title>Nian (Rocky) Liu</title>
+  <link rel="icon" href="images/favicon.jpeg" type="image/jpeg">
+  <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/media-viewer.js" defer></script>
+  <script src="js/project-slideshow.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main class="page" id="main">
+    <header class="about" id="about">
+      <div class="identity">
+        <h1>Nian (Rocky) Liu <span lang="zh-CN">刘念</span></h1>
+      </div>
+      <img class="portrait" src="images/me(2).webp" alt="Nian Liu" fetchpriority="high" width="339" height="465">
+      <div class="biography">
+        <p class="research-intro">I am a Ph.D. student jointly affiliated with Beijing University of Posts and Telecommunications (BUPT) and the Beijing Institute for General Artificial Intelligence (BIGAI), advised by <a href="https://siyuanhuang.com/" target="_blank" rel="noopener noreferrer">Siyuan Huang</a> and <a href="https://tengyu.ai/" target="_blank" rel="noopener noreferrer">Tengyu Liu</a>.</p>
+        <p>My research focuses on <strong>robot perception and control</strong> and <strong>physics-based character animation</strong>, with a particular interest in vision-language-action (VLA) models and sim-to-real transfer.</p>
+        <p>I am also an ESP8266 enthusiast.</p>
+        <p class="contact"><a class="email-link" href="mailto:rockyliu@bupt.edu.cn"><svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>rockyliu@bupt.edu.cn</span></a></p>
+      </div>
+    </header>
+
+    <nav class="navigation" aria-label="Page sections">
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+    </nav>
+
+    <section id="publications" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <h2 id="publications-title">Publications</h2>
+        <p class="section-note">* Equal contribution</p>
+      </div>
+
+      <article class="publication" id="delta-0">
+        <a class="publication-image" href="images/2026_Delta0.webp" data-media aria-label="Enlarge Delta-0 figure">
+          <img src="images/thumbs/2026_Delta0.webp" alt="Delta-0 (Δ₀): A New Chapter in Humanoid Intelligence" loading="lazy" decoding="async" width="640" height="360">
+        </a>
+        <div class="publication-content">
+          <p class="venue"><strong>Delta Intelligence, 2026</strong></p>
+          <h3><a href="https://deltai.com/en/blog/delta-0" target="_blank" rel="noopener noreferrer">Delta-0 (Δ₀): A New Chapter in Humanoid Intelligence</a></h3>
+          <p class="authors"><strong>Delta Intelligence Team</strong></p>
+          <div class="links"><a href="https://deltai.com/en/blog/delta-0" target="_blank" rel="noopener noreferrer">Blog post</a></div>
+        </div>
+      </article>
+
+      <article class="publication" id="tacl">
+        <a class="publication-image" href="images/papers/tacl-pipeline.webp" data-media aria-label="Enlarge paper figure">
+          <img src="images/thumbs/tacl-pipeline.webp" alt="TACL pipeline: policy learning and rollout collection, evaluator training, and evaluator-guided task generation" loading="lazy" decoding="async" width="640" height="285">
+        </a>
+        <div class="publication-content">
+          <p class="venue"><strong>CoRL 2026</strong></p>
+          <h3><a href="https://openreview.net/attachment?id=0mUj0bXuJh&amp;name=pdf" target="_blank" rel="noopener noreferrer">TACL: Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain</a></h3>
+          <p class="authors"><strong>Nian Liu</strong>, Tengyu Liu, Baoxiong Jia, Fangwei Zhong, Xinyi Tong, Hongzhao Xie, Siyuan Huang</p>
+          <div class="links"><a href="https://youtu.be/PixNsy9AndE" data-youtube="PixNsy9AndE" target="_blank" rel="noopener noreferrer">Video</a><details class="paper-details"><summary>Overview</summary><p>TACL learns to estimate trajectory difficulty for the current policy and uses Metropolis–Hastings sampling to generate training tasks on unstructured terrain. Across four obstacle types at their highest difficulty levels, TACL achieves an average trajectory success rate of 84.25%, compared with 65.75% for the handcrafted curriculum baseline.</p></details></div>
+        </div>
+      </article>
+
+      <article class="publication" id="lidar">
+        <a class="publication-image" href="images/papers/lidar.webp" data-media aria-label="Enlarge paper figure">
+          <img src="images/thumbs/lidar.webp" alt="LiDAR scan-pattern replay and spherical range-image policy pipeline" loading="lazy" decoding="async" width="640" height="148">
+        </a>
+        <div class="publication-content">
+          <p class="venue venue--review"><strong>Under review</strong></p>
+          <!-- Add href to the title link and remove aria-disabled when the paper is available. -->
+          <h3><a role="link" aria-disabled="true">LiDAR Signals for Robot Locomotion: Spherical Range Images Enable Robust Sim-to-Real Transfer</a></h3>
+          <p class="authors"><strong>Nian Liu*</strong>, Xinyi Tong*, Ming Ren, Long Ye, Zhaofeng He</p>
+          <div class="links"><a href="https://lidar-img.github.io/" target="_blank" rel="noopener noreferrer">Project page</a><details class="paper-details"><summary>Overview</summary><p>We encode temporally aggregated LiDAR point clouds as spherical range images and replay real scanning patterns in simulation. The resulting policies transfer directly to quadruped hardware, outperforming the depth-image and PointNet-based LiDAR baselines evaluated in the study.</p></details></div>
+        </div>
+      </article>
+
+      <article class="publication" id="vem">
+        <a class="publication-image" href="https://arxiv.org/html/2511.09585v4/figures/1_task_illustration.png" data-media aria-label="Enlarge paper figure">
+          <img src="https://arxiv.org/html/2511.09585v4/figures/1_task_illustration.png" alt="VeM task overview: aligning video semantics, timing, and scene transitions with generated music" loading="lazy" decoding="async">
+        </a>
+        <div class="publication-content">
+          <p class="venue"><strong>AAAI 2026</strong> · <span class="venue-distinction">Oral</span></p>
+          <h3><a href="https://arxiv.org/abs/2511.09585" target="_blank" rel="noopener noreferrer">Video Echoed in Music: Semantic, Temporal, and Rhythmic Alignment for Video-to-Music Generation</a></h3>
+          <p class="authors">Xinyi Tong, Yiran Zhu, Jishang Chen, Chunru Zhan, Tianle Wang, Sirui Zhang, <strong>Nian Liu</strong>, Tiezheng Ge, Duo Xu, Xin Jin, Feng Yu, Song-Chun Zhu</p>
+          <div class="links"><a href="https://vem-paper.github.io/VeM-page/" target="_blank" rel="noopener noreferrer">Project page</a><details class="paper-details"><summary>Overview</summary><p>VeM generates background music aligned with a video’s content, timing, and rhythm. It combines hierarchical video understanding with storyboard-guided cross-attention and a transition–beat alignment module to synchronize musical beats with scene changes.</p></details></div>
+        </div>
+      </article>
+
+      <article class="publication" id="unimax">
+        <a class="publication-image" href="images/papers/unimax.webp" data-media aria-label="Enlarge paper figure">
+          <img src="images/thumbs/unimax.webp" alt="UniMax framework: uniformly distributed skill embeddings and conditional imitation learning" loading="lazy" decoding="async" width="640" height="158">
+        </a>
+        <div class="publication-content">
+          <p class="venue"><strong>ACM Multimedia 2025</strong> · <span class="venue-distinction">Oral</span></p>
+          <h3><a href="https://doi.org/10.1145/3746027.3755577" target="_blank" rel="noopener noreferrer">UniMax: Learning Uniformly Distributed Embedding Clusters of Stylistic Skills for Physically Simulated Characters</a></h3>
+          <p class="authors"><strong>Nian Liu</strong>, Zilong Zhang, Zi Wang, Tengyu Liu, Hongzhao Xie, Xinyi Tong, Libin Liu, Yaodong Yang, Zhaofeng He</p>
+          <div class="links"><a href="https://www.youtube.com/watch?v=FxWnMljiNyg" data-youtube="FxWnMljiNyg" target="_blank" rel="noopener noreferrer">Video</a><a href="https://learnedunimax.github.io/" target="_blank" rel="noopener noreferrer">Project page</a><details class="paper-details"><summary>Overview</summary><p>UniMax uses neural collapse and embedding expansion to organize skill embeddings into more uniformly distributed clusters in latent space. The controller preserves motion style while supporting motion variation, skill switching, and smooth interpolation between skills.</p></details></div>
+        </div>
+      </article>
+
+      <article class="publication" id="hvae">
+        <a class="publication-image" href="images/papers/hvae.webp" data-media aria-label="Enlarge paper figure">
+          <img src="images/thumbs/hvae.webp" alt="HVAE value-rationality results for eight language models across four social value orientations" loading="lazy" decoding="async" width="640" height="368">
+        </a>
+        <div class="publication-content">
+          <p class="venue"><strong>AGI 2025</strong></p>
+          <h3><a href="https://doi.org/10.1007/978-3-032-00800-8_34" target="_blank" rel="noopener noreferrer">Heterogeneous Value Alignment Evaluation for Large Language Models</a></h3>
+          <p class="authors">Zhaowei Zhang, Ceyao Zhang, <strong>Nian Liu</strong>, Siyuan Qi, Ziqi Rong, Song-Chun Zhu, Yaodong Yang</p>
+          <div class="links"><details class="paper-details"><summary>Overview</summary><p>HVAE evaluates how consistently large language models follow specified social values. Using the Social Value Orientation framework and a value-rationality metric, it measures how models balance self-interest against the welfare of others. The models evaluated in the study show a tendency toward neutral values.</p></details></div>
+        </div>
+      </article>
+
+      <article class="publication" id="veh">
+        <a class="publication-image" href="images/papers/veh.webp" data-media aria-label="Enlarge paper figure">
+          <img src="images/thumbs/veh.webp" alt="VEH method: video understanding and controllable chord-progression learning and sampling" loading="lazy" decoding="async" width="640" height="278">
+        </a>
+        <div class="publication-content">
+          <p class="venue"><strong>IEEE Transactions on Computational Social Systems, 2025</strong></p>
+          <h3><a href="https://doi.org/10.1109/TCSS.2024.3451515" target="_blank" rel="noopener noreferrer">Video Echoed in Harmony: Learning and Sampling Video-Integrated Chord Progression Sequences for Controllable Video Background Music Generation</a></h3>
+          <p class="authors">Xinyi Tong, Sitong Chen, Peiyang Yu, <strong>Nian Liu</strong>, Hui Qv, Tao Ma, Bo Zheng, Feng Yu, Song-Chun Zhu</p>
+          <div class="links"><details class="paper-details"><summary>Overview</summary><p>VEH uses chord progressions to connect video content with controllable background music. Vision-language models provide semantic cues, while energy-based learning and sampling offer interpretable control over harmony with less reliance on paired video–music data.</p></details></div>
+        </div>
+      </article>
+
+      <article class="publication" id="anyskill">
+        <a class="publication-image" href="https://raw.githubusercontent.com/jiemingcui/anyskill/main/assets/teaser.png" data-media aria-label="Enlarge paper figure">
+          <img src="https://raw.githubusercontent.com/jiemingcui/anyskill/main/assets/teaser.png" alt="AnySkill examples of physical motions generated from language instructions" loading="lazy" decoding="async">
+        </a>
+        <div class="publication-content">
+          <p class="venue"><strong>CVPR 2024</strong></p>
+          <h3><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Cui_AnySkill_Learning_Open-Vocabulary_Physical_Skill_for_Interactive_Agents_CVPR_2024_paper.html" target="_blank" rel="noopener noreferrer">AnySkill: Learning Open-Vocabulary Physical Skill for Interactive Agents</a></h3>
+          <p class="authors">Jieming Cui*, Tengyu Liu*, <strong>Nian Liu*</strong>, Yaodong Yang, Yixin Zhu, Siyuan Huang</p>
+          <div class="links"><a href="https://anyskill.github.io/" target="_blank" rel="noopener noreferrer">Project page</a><details class="paper-details"><summary>Overview</summary><p>AnySkill combines a low-level skill policy trained through imitation learning with a high-level controller trained using CLIP image–text similarity rewards. It enables physically simulated agents to follow unseen language instructions and interact with objects without task-specific reward design.</p></details></div>
+        </div>
+      </article>
+
+      <article class="publication" id="civrealm">
+        <a class="publication-image" href="images/papers/civrealm.webp" data-media aria-label="Enlarge paper figure">
+          <img src="images/thumbs/civrealm.webp" alt="CivRealm tensor-based reinforcement-learning agent architecture" loading="lazy" decoding="async" width="640" height="231">
+        </a>
+        <div class="publication-content">
+          <p class="venue"><strong>ICLR 2024</strong> · <span class="venue-distinction">Spotlight</span></p>
+          <h3><a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/76d2f8e328e1081c22a77ca0fa330ca5-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">CivRealm: A Learning and Reasoning Odyssey in Civilization for Decision-Making Agents</a></h3>
+          <p class="authors">Siyuan Qi, Shuo Chen, Yexin Li, Xiangyu Kong, Junqi Wang, Bangcheng Yang, Pring Wong, Yifan Zhong, Xiaoyuan Zhang, Zhaowei Zhang, <strong>Nian Liu</strong>, Yaodong Yang, Song-Chun Zhu</p>
+          <div class="links"><details class="paper-details"><summary>Overview</summary><p>CivRealm is a Civilization-inspired environment for studying learning and reasoning in long-term decision-making. It supports reinforcement learning agents and language model agents, testing their ability to plan, negotiate, and adapt under incomplete information in both mini-games and the full game.</p></details></div>
+        </div>
+      </article>
+
+      <article class="publication" id="pa-net">
+        <a class="publication-image" href="images/papers/pa-net.jpg" data-media aria-label="Enlarge paper figure">
+          <img src="images/thumbs/pa-net.webp" alt="PA-Net architecture combining pose attention with local and global appearance features" loading="lazy" decoding="async" width="640" height="415">
+        </a>
+        <div class="publication-content">
+          <p class="venue"><strong>Information Sciences, 2021</strong></p>
+          <h3><a href="https://doi.org/10.1016/j.ins.2021.02.066" target="_blank" rel="noopener noreferrer">PA-Net: Learning local features using by pose attention for short-term person re-identification</a></h3>
+          <p class="authors">Kai Wang, Shichao Dong, <strong>Nian Liu</strong>, Junhui Yang, Tao Li, Qinghua Hu</p>
+          <div class="links"><details class="paper-details" data-gallery-src="images/heatmap.webp" data-gallery-alt="PA-Net attention maps: original images, global branch, pose branches, and feature map"><summary>Overview</summary><p>PA-Net combines pose attention with global appearance features for person re-identification. Pose-guided training improves local and global representations while reducing sensitivity to the domain gap between pose-estimation and re-identification data.</p></details></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <article class="project" id="time-series">
+        <a class="project-image" href="images/com.webp" aria-label="View anomaly detection comparison">
+          <img src="images/com.webp" alt="Supervised and self-supervised time-series anomaly detection results" loading="lazy" width="903" height="606">
+        </a>
+        <div>
+          <h3><a href="papers/thesis.pdf" target="_blank" rel="noopener noreferrer">Self-supervised learning for time-series anomaly detection</a></h3>
+          <p class="project-date">Master’s dissertation, April–August 2021</p>
+          <p>I investigated self-supervised learning for time-series anomaly detection with limited labeled data. The learned representations improved detection performance compared with a supervised baseline and several unsupervised methods.</p>
+        </div>
+      </article>
+
+      <article class="project" id="mobile-segmentation">
+        <a class="project-image" href="images/mobile.webp" aria-label="View mobile segmentation application">
+          <img src="images/mobile.webp" alt="Retinal vessel segmentation running on an Android phone" loading="lazy" width="551" height="483">
+        </a>
+        <div>
+          <h3>On-device retinal vessel segmentation</h3>
+          <p class="project-date">July–August 2019</p>
+          <p>This Android application performs retinal vessel segmentation on a phone with a Kirin chipset. I trained the model on the DRIVE dataset and deployed it using <strong><a href="https://developer.huawei.com/consumer/cn/hiai/" target="_blank" rel="noopener noreferrer">Huawei HiAI</a></strong>, integrating on-device inference and visualization into the app.</p>
+        </div>
+      </article>
+
+      <article class="project" id="person-retrieval">
+        <a class="project-image" href="images/model.webp" aria-label="View person retrieval network architecture">
+          <img src="images/model.webp" alt="Siamese ResNet-50 network with identity classification and contrastive learning for person retrieval" loading="lazy" width="920" height="486">
+        </a>
+        <div>
+          <h3>Person re-identification and retrieval system</h3>
+          <p class="project-date">Undergraduate final-year project, April–July 2019</p>
+          <p>This web-based system searches for a person across images and videos using a Siamese network that combines identity classification and contrastive learning. Its interface supports searching, record management, and review of retrieval results.</p>
+        </div>
+      </article>
+
+      <article class="project" id="tiny-thingor">
+        <div class="project-slideshow" role="group" aria-roledescription="carousel" aria-label="Tiny Thingor demonstrations. Use the left and right arrow keys to switch demos.">
+          <div class="project-slides">
+            <a class="project-image" href="images/tiny_button.gif" aria-label="View Tiny Thingor browser demo">
+              <picture>
+                <source media="(prefers-reduced-motion: reduce)" srcset="images/ting.webp">
+                <img src="images/tiny_button.gif" alt="Animated demonstration of controlling connected hardware through Tiny Thingor" loading="lazy" width="854" height="480">
+              </picture>
+            </a>
+            <a class="project-image" href="images/tiny_wechat.gif" aria-label="View Tiny Thingor WeChat demo" aria-hidden="true" tabindex="-1" inert>
+              <img src="images/tiny_wechat.gif" alt="Animated demonstration of controlling connected hardware through WeChat in Tiny Thingor" loading="lazy" width="854" height="480">
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3>Tiny Thingor</h3>
+          <p class="project-date">Project leader, July–September 2017</p>
+          <p>This Internet of Things (IoT) platform allows users to monitor sensor data and control connected devices through a web browser or WeChat. I led a five-person team to build the platform, including tools for exploring and modeling sensor data.</p>
+          <ul class="project-awards" aria-label="Awards">
+            <li><strong>Provincial First Prize</strong>; <strong>nominated for the Grand Prize</strong> · Shandong Software Design Competition, 2017</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project" id="flower-pi">
+        <a class="project-image" href="images/gif.gif" aria-label="View Flower Pi device demo">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="images/FlowerPi.webp">
+            <img src="images/gif.gif" alt="Flower Pi plant-care device demonstration" loading="lazy" width="560" height="315">
+          </picture>
+        </a>
+        <div>
+          <h3>Flower Pi</h3>
+          <p class="project-date">Project leader, February–July 2017</p>
+          <p>This connected plant-care system monitors environmental conditions, enables remote watering and heating, and accepts voice commands through WeChat. I led a seven-person team to build the hardware and control interfaces.</p>
+          <ul class="project-awards" aria-label="Awards">
+            <li><strong>National First Prize (3rd place overall)</strong> · “Haofang Cup” National Business Elite Challenge 2017</li>
+            <li><strong>Provincial First Prize</strong> · Shandong IoT Creativity Competition 2017</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project" id="where-to-live">
+        <a class="project-image" href="images/vr.webp" aria-label="View panoramic property tour demo">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="images/livevr.webp">
+            <img src="images/vr.webp" alt="Animated panoramic property tour in Where to Live" loading="lazy" width="747" height="420">
+          </picture>
+        </a>
+        <div>
+          <h3>Where to Live</h3>
+          <p class="project-date">Project leader, June–September 2016</p>
+          <p>This property-listing platform converts panoramic photographs into virtual tours that can be viewed through a web browser or a VR headset. I led a four-person team to develop the property-listing and virtual-tour features.</p>
+          <ul class="project-awards" aria-label="Awards">
+            <li><strong>Provincial First Prize</strong> · Shandong Software Design Competition 2016</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="history">
+        <article class="history-entry">
+          <img class="institution-logo" src="images/logos/bupt.svg" alt="Beijing University of Posts and Telecommunications logo" width="84" height="72" loading="lazy" decoding="async">
+          <div class="history-content">
+            <div class="history-heading"><h3>Beijing University of Posts and Telecommunications</h3><span>2023–Present</span></div>
+          <p>Ph.D. in Intelligent Science and Technology (in progress); joint training with BIGAI.</p>
+          <p>Advisors: <a href="https://siyuanhuang.com/" target="_blank" rel="noopener noreferrer">Siyuan Huang</a> and <a href="https://tengyu.ai/" target="_blank" rel="noopener noreferrer">Tengyu Liu</a>.</p>
+          <p>BUPT advisor: <a href="https://teacher.bupt.edu.cn/hezhaofeng/en/index.htm" target="_blank" rel="noopener noreferrer">Zhaofeng He</a>.</p>
+          </div>
+        </article>
+        <article class="history-entry">
+          <img class="institution-logo" src="images/logos/edinburgh-university.svg" alt="University of Edinburgh crest" width="84" height="72" loading="lazy" decoding="async">
+          <div class="history-content">
+            <div class="history-heading"><h3>University of Edinburgh</h3><span>2020–2021</span></div>
+          <p>MSc in Design Informatics, School of Informatics.</p>
+          <p>Advisors: <a href="https://homepages.inf.ed.ac.uk/hbilen/" target="_blank" rel="noopener noreferrer">Hakan Bilen</a> and <a href="http://mariawolters.net/" target="_blank" rel="noopener noreferrer">Maria Wolters</a>.</p>
+          </div>
+        </article>
+        <article class="history-entry">
+          <img class="institution-logo" src="images/logos/sdust.svg" alt="Shandong University of Science and Technology logo" width="84" height="72" loading="lazy" decoding="async">
+          <div class="history-content">
+            <div class="history-heading"><h3>Shandong University of Science and Technology</h3><span>2015–2019</span></div>
+          <p>Bachelor’s degree in Computer Science and Technology.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <div class="history">
+        <article class="history-entry">
+          <img class="institution-logo" src="https://deltai.com/media/brand/delta-icon.png" alt="Delta Intelligence logo" width="84" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+          <div class="history-content">
+            <div class="history-heading"><h3>Delta Intelligence</h3><span>Jul 2026–Present</span></div>
+          <p>Research Intern, Humanoid Foundation Models.</p>
+          <p>I am a core contributor to Δ<sub>0</sub>’s real-to-sim-to-real evaluation framework for humanoid VLA models.</p>
+          </div>
+        </article>
+        <article class="history-entry">
+          <img class="institution-logo" src="images/thumbs/bigai-red.webp" alt="BIGAI red logo" loading="lazy" decoding="async" width="256" height="198">
+          <div class="history-content">
+            <div class="history-heading"><h3>Beijing Institute for General Artificial Intelligence (BIGAI)</h3><span>Sep 2022–Jun 2026</span></div>
+          <p>Research Intern, Frontier Research Center.</p>
+          <p>I conducted research on robot perception, locomotion, and physics-based character control.</p>
+          </div>
+        </article>
+        <article class="history-entry">
+          <img class="institution-logo" src="images/logos/vmware.svg" alt="VMware logo" width="84" height="72" loading="lazy" decoding="async">
+          <div class="history-content">
+            <div class="history-heading"><h3>VMware</h3><span>Jun 2021–Aug 2022</span></div>
+          <p>Algorithm Engineer, Office of the CTO.</p>
+          <p>I worked on Kubernetes, WebAssembly, and edge AI.</p>
+          </div>
+        </article>
+        <article class="history-entry">
+          <img class="institution-logo" src="images/logos/nankai.svg" alt="Nankai University logo" width="84" height="72" loading="lazy" decoding="async">
+          <div class="history-content">
+            <div class="history-heading"><h3>Nankai University</h3><span>Jun 2019–Sep 2020</span></div>
+          <p>Research Assistant, Intelligence Computing System Lab.</p>
+          <p>I worked on person re-identification under the supervision of <a href="mailto:wangk@nankai.edu.cn">Kai Wang</a>.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer><a href="#about">Back to top</a></footer>
+  </main>
+
+  <dialog class="media-modal" id="media-modal" aria-labelledby="media-title" aria-describedby="media-caption">
+    <div class="media-header">
+      <h2 id="media-title">Image preview</h2>
+      <button class="media-close" type="button" aria-label="Close preview" autofocus><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="media-paper" hidden></div>
+    <div class="media-content" aria-busy="false">
+      <p class="media-status" role="status" hidden></p>
+      <img class="media-image" alt="" hidden>
+      <p class="media-error" role="alert" hidden>The preview could not be loaded. <a class="media-original" target="_blank" rel="noopener noreferrer">Open the original image</a>.</p>
+    </div>
+    <p id="media-caption"></p>
+  </dialog>
+</body>
 </html>

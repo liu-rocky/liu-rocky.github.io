@@ -1,0 +1,9 @@
+# Local backups and obsolete deployment outputs
+/backups/
+/maintenance/
+/dist/
+/homepage-release.zip
+
+# Python cache files
+__pycache__/
+*.py[cod]
